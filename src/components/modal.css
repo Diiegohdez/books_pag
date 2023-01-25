@@ -1,0 +1,97 @@
+.modal{
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.4));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container{
+    background-color: white;
+    width: 700px;
+    height: 550px;
+    padding: 1.5rem;
+    position: relative;
+    box-sizing: border-box;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.modal-container .close {
+    position:absolute;
+    top: 1rem;
+    right: 1rem;
+    outline: none;
+    border: none;
+    font-size: 19px;
+    background-color: transparent;
+}
+
+.modal-container .modal-cont{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.modal-container .modal-cont img{
+    margin-right: 20px;
+    width: 150px;
+    height: 200px;
+}
+
+.modal-container .modal-cont h3{
+    margin-top: 10px;
+    color: green;
+}
+
+.modal-container .modal-cont h4{
+    color: blue;
+}
+
+.modal-container .modal-cont button{
+    outline: none;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #24a0ed;
+    color: white;
+    font-weight: bold;
+    padding: 0.3rem 0.5rem;
+}
+
+.modal-container .description{
+    margin-top: 2rem;
+    text-align: justify;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 412px) {
+    .modal-container{
+        width: 350px;
+        height: 500px;
+    }
+
+    .modal-container .modal-cont h1{
+        font-size: 25px;
+    }
+
+    .modal-container .modal-cont h3{
+        font-size: 12px;
+    }
+
+    .modal-container .modal-cont h4{
+        font-size: 12px;
+    }
+
+    .modal-container .modal-cont button{
+        padding: 0.1rem 0.2rem;
+    }
+}
